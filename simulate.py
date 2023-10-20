@@ -6,6 +6,7 @@
 # @Software: PyCharm
 from schedulers.GAScheduler import GAScheduler
 from utils.Entities import VM, Cloudlet
+import numpy as np
 
 
 def main(use_data, use_algorithm):
@@ -41,6 +42,8 @@ def main(use_data, use_algorithm):
             i += 1
         print(res)
 
+        # 需要将调度结果同步到 Kubernetes 中去
+        # 直接执行 shell 命令不就完了
 
 def run():
     use_algorithm = "GA"

@@ -3,3 +3,6 @@
 /imgs/
 /imgr2/
 /__pycache__/
+
+*.pyc
+.idea
